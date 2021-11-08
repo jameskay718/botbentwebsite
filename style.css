@@ -1,0 +1,147 @@
+:root {
+    --main-color: white;
+    --main-bg-color:black;
+    -webkit-font-smoothing: antialiased;
+}
+
+* {
+    font-family: 'Akkurat-mono';
+    letter-spacing: -0.5px;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 15px;
+    color: var(--main-color);
+}
+
+body{
+    
+    background-color: var(--main-bg-color);
+    overflow: hidden;
+    min-height: 100%;
+    height: 100%;
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.flex-container{
+    display: flex;
+    width:100%;
+    height:100%;
+}
+
+
+.bg-holder img{
+    opacity:4;
+    width:calc(100%/2.7);
+    max-width: 100%;
+    display: inline-flex;
+}
+
+.bg-holder{
+    display:flex;
+    justify-content: center;
+    width: auto;
+    height: 100%;
+   
+}
+
+.bg-holder_image{
+    width:calc(100%/2.7);
+    margin-top: 5%;
+    justify-content: center;
+}
+
+
+
+.link {
+    font-family: 'Akkurat-Mono';
+    text-decoration: capitalize;
+    color: white;
+}
+
+.link:hover{
+    cursor:pointer;
+    color: #90e0ef;
+}
+
+
+span.top-left{
+position: absolute;
+top: 0;
+left: 0;
+font-weight: 400px;
+}
+
+span.top-right{
+   position: absolute;
+   top: 0;
+   right: 0;
+}
+
+span.bottom-right{
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   
+}
+
+span.bottom-left{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+}
+
+
+a:hover {
+    text-decoration: none;
+    color: #dedede;
+}
+
+/*img:hover{
+    opacity: 4;
+    width: calc(100%/2.5);
+    -webkit-animation:spin 150s linear ;
+    animation:spin 180s linear infinite;
+}
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
+}*/
+
+
+@media (max-width: 768px) {
+    * {
+        background-color: black;
+        font-style: 'Akkurat-Mono';
+        font-size: 12px;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .bg-holder{
+        display: flex;
+        justify-content: center;
+    }
+
+    img{
+        max-width:100%;
+    }
+
+    .bg-holder img{
+        display: flex;
+        justify-content: center;
+        opacity:4;
+        width:calc(100%/4);
+    }
+}

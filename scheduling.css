@@ -1,0 +1,104 @@
+:root {
+    --main-color: white;
+    --main-bg-color:black;
+    -webkit-font-smoothing: antialiased;
+}
+
+header p{
+    color: white;
+    font-family: 'Akkurat-Mono';
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+
+body{
+    background-color: black;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+#link{
+    text-align: center;
+}
+
+.acuity-embed-button:hover{
+    color: #90e0ef;
+}
+
+.acuity-embed-button{
+    background-color: black !important;
+    padding: 8px 12px;
+    border: 0px;
+    box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;
+    -moz-box-shadow: 0 -2px 0 rgba(0,0,0,0.15) inset;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#text-box p {
+    font-size: 30px;
+    font-family: plain, 'Helvetica-Neue';
+}
+
+p{
+    color: #e5e5e5;
+    text-align: center;
+    text-decoration:uppercase;
+    font-weight: 400;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: -0.5px;
+    margin: 0;
+    padding: 0;
+    animation: slide-up 3s ease-in-out;
+    line-height: 45px;
+ }
+ 
+
+ a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 25px;
+}
+
+a:hover{
+    color: #90e0ef;
+}
+
+@media only screen and (max-device-width: 768px) {
+    * {
+        background-color: black;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    header p {
+        color: white;
+        font-style: 'Akkurat-Mono';
+        font-size: 15px;
+        font-weight: 400;
+        text-align: center;
+     }
+
+     #text-box p{
+        font-family: plain,'Helvetica-Neue';
+        color: #e5e5e5;
+        font-weight: 400;
+        text-align: center;
+        font-size: 13px;
+        text-rendering: optimizeLegibility;
+     }
+    
+    #link{
+         text-align: center;
+         font-size: 13px;
+    }
+
+     
+}
